@@ -6,7 +6,7 @@ import { SPEED_INTERVAL, levels, initPattern, STATUS } from "../constants";
 const useController = () => {
   const [speed, setSpeed] = useState<number>(SPEED_INTERVAL);
   const [status, setStatus] = useState<Status>(STATUS.STOP);
-  const [selectedLevel, setSelectedLevel] = useState<number>(levels[0]);
+  const [selectedLevel, setSelectedLevel] = useState<number>(levels[4]);
   const [pattern, setPattern] = useState<Pattern>(initPattern);
   const [score, setScore] = useState<string[]>([]);
 

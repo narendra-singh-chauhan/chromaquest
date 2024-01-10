@@ -2,6 +2,7 @@ import { useMemo, useRef, useState } from "react";
 import { useEffect } from "react";
 import { LevelProps } from "../types";
 import Tile from "../components/Tile";
+import { COLORS } from "../constants";
 
 // methods
 const getRedGrids = (x: number, y: number, grids: number[], columns: number): number[] => {
@@ -97,7 +98,7 @@ const Level02 = ({ speed, status, rows, columns, grids, onScoreChange }: LevelPr
 
     // tiles
     const tiles = grids.map(grid => {
-        const color = redGrids.includes(grid) ? 'red' : yellowGrids.includes(grid) ? 'yellow' : blueGrids.includes(grid) ? 'blue' : 'transparent';
+        const color = redGrids.includes(grid) ? COLORS.R : yellowGrids.includes(grid) ? COLORS.G : blueGrids.includes(grid) ? COLORS.B: COLORS.T;
 
         return (
             <Tile

@@ -10,6 +10,9 @@ import useController from './hooks/useController';
 import { useMemo } from 'react';
 import generateGrids from './utils/generateGrids';
 import Score from './components/Score';
+import Level03 from './levels/Level03';
+import Level04 from './levels/Level04';
+import Level05 from './levels/Level05';
 
 const App = () => {
   const {
@@ -59,6 +62,18 @@ const App = () => {
 
           {selectedLevel === 2 && (
             <Level02 speed={speed} status={status} {...pattern} grids={grids} onScoreChange={onScoreChange} />
+          )}
+
+          {selectedLevel === 3 && (
+            <Level03 speed={speed} status={status} {...pattern} grids={grids} onScoreChange={onScoreChange} />
+          )}
+
+          {selectedLevel === 4 && (
+            <Level04 speed={speed} status={status} {...pattern} grids={grids} onScoreChange={onScoreChange} />
+          )}
+
+          {selectedLevel === 5 && (
+            <Level05 speed={speed} status={status} {...pattern} grids={grids} onScoreChange={onScoreChange} />
           )}
         </div>
       </div>
