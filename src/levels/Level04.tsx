@@ -26,7 +26,7 @@ const Level04 = ({ speed, status, rows, columns, grids, onScoreChange }: LevelPr
 
         const intervalId = setInterval(() => {
             setRedGrids(getRedGrids(rows, columns, yRef.current));
-            if(yRef.current === 8){
+            if(yRef.current === 9){
                 yRef.current = 2;
             } else {
                 yRef.current += 1;

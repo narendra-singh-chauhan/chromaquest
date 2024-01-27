@@ -13,6 +13,7 @@ import Score from './components/Score';
 import Level03 from './levels/Level03';
 import Level04 from './levels/Level04';
 import Level05 from './levels/Level05';
+import Waves from './animations/Waves';
 
 const App = () => {
   const {
@@ -74,6 +75,10 @@ const App = () => {
 
           {selectedLevel === 5 && (
             <Level05 speed={speed} status={status} {...pattern} grids={grids} onScoreChange={onScoreChange} />
+          )}
+
+          {selectedLevel === 6 && (
+            <Waves speed={speed} status={status} {...pattern} grids={grids} onScoreChange={onScoreChange} />
           )}
         </div>
       </div>

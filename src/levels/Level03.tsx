@@ -119,17 +119,6 @@ const Level03 = ({ speed, status, rows, columns, grids, onScoreChange }: LevelPr
 
     // blue grids
     const blueGrids = useMemo(() => {
-        // const newBlueGrids: number[] = [];
-
-        // while (newBlueGrids.length < ((columns / 2) + columns)) {
-        //     const randomIndex = Math.floor(Math.random() * grids.length);
-        //     if (!newBlueGrids.includes(randomIndex)) {
-        //         newBlueGrids.push(randomIndex);
-        //     }
-        // }
-
-        // return newBlueGrids;
-
         const blueGrids = [];
 
         for(let i = (columns * 3) + 6; i <= (columns * 4) - 5; i+= 3){

@@ -1,13 +1,13 @@
 import { Pattern, numArr, StatusMap, RL01Position } from "./types";
 
-export const SPEED_INTERVAL: number = 50;
+export const SPEED_INTERVAL: number = 200;
 export const MAX_SPEED_LIMIT: number = 1000;
 
-export const levels: numArr  = [1, 2, 3, 4, 5];
+export const levels: numArr  = [1, 2, 3, 4, 5, 6];
 
 export const initPattern: Pattern = {
-  rows: 30,
-  columns: 20,
+  rows: 15,
+  columns: 15,
 };
 
 export const STATUS: StatusMap  = {
